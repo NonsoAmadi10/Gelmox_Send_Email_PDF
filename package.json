@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/NonsoAmadi10/Gelmox-Send_Email_PDF/issues"
   },
-  "homepage": "https://github.com/NonsoAmadi10/Gelmox-Send_Email_PDF#readme"
+  "homepage": "https://github.com/NonsoAmadi10/Gelmox-Send_Email_PDF#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
