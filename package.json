@@ -1,0 +1,23 @@
+{
+  "name": "emailpdf",
+  "version": "1.0.0",
+  "description": "A simple API service to send pdf in emails for gelmox group",
+  "main": "index.ts",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NonsoAmadi10/Gelmox-Send_Email_PDF.git"
+  },
+  "keywords": [
+    "Email",
+    "PDFs"
+  ],
+  "author": "NonsoAmadi10",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NonsoAmadi10/Gelmox-Send_Email_PDF/issues"
+  },
+  "homepage": "https://github.com/NonsoAmadi10/Gelmox-Send_Email_PDF#readme"
+}
