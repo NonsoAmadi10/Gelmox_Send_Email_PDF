@@ -24,18 +24,21 @@
   },
   "homepage": "https://github.com/NonsoAmadi10/Gelmox-Send_Email_PDF#readme",
   "dependencies": {
+    "@bluewavesolutions/html-2-pdf": "^0.1.2",
+    "@sendgrid/mail": "^7.2.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "html-pdf": "^2.2.0",
     "html-pdf-node": "^1.0.2",
     "method-override": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "*",
     "@babel/core": "*",
     "@babel/node": "*",
+    "@babel/plugin-transform-runtime": "7.10.5",
     "@babel/preset-env": "*",
-    "@babel/cli": "*",
-    "@babel/runtime": "7.10.5",
-    "@babel/plugin-transform-runtime": "7.10.5"
+    "@babel/runtime": "7.10.5"
   }
 }
