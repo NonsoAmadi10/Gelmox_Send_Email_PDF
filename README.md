@@ -17,7 +17,6 @@ A simple API service for gelmox group that sends order invoices in pdf format to
      "customer_name": String,
 	"billing_address": String,
 	"customer_email": String,
-	"total": Float || Number,
 	"phone_number": Number,
 	"products": Array of Objects
  }
@@ -30,7 +29,6 @@ A simple API service for gelmox group that sends order invoices in pdf format to
     "customer_name": "nonso",
 	"billing_address": "37, Onasanya, street, surulere",
 	"customer_email": "nonnypyg@gmail.com",
-	"total": 5000,
 	"phone_number": 80789009,
 	"products": [
 		{
@@ -66,3 +64,11 @@ A simple API service for gelmox group that sends order invoices in pdf format to
 
 `
 
+
+#### Important notes
+
+- The Quantity Total is calculated by the API
+
+- The Total Price is calculated automaticalling and added to the pdf
+
+- The Mail takes 8 minutes Max to reach the customer email
