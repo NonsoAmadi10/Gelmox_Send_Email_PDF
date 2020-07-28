@@ -17,6 +17,9 @@
     "Email",
     "PDFs"
   ],
+  "engines": {
+    "node": ">=10.0"
+  },
   "author": "NonsoAmadi10",
   "license": "MIT",
   "bugs": {
