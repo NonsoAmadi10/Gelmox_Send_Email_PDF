@@ -14,8 +14,11 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send({
     "message": "Hello there! Send an Order to gelmox logistics! Contact Nonso Amadi for guide"
-  })
-})
+  });
+});
+
+app.set('x-powered-by', false);
+
 
 app.post("/api/send-pdf", async (req, res) => {
 
@@ -213,6 +216,11 @@ padding: 8px;"> <strong> ${products.reduce((a, b) => a.qty + b.qty)}pcs </strong
   }
 })
 
+
+app.all('*', (req, res) => res.status(404).json({
+  success: false,
+  message: 'The page you are looking for does not exist'
+}));
 app.listen(
   process.env.PORT,
   () => console.log(`Server is Running on ${process.env.PORT}`),
