@@ -35,7 +35,8 @@
     "express": "^4.17.1",
     "html-pdf": "^2.2.0",
     "method-override": "^3.0.0",
-    "@babel/polyfill": "7.10.4"
+    "@babel/polyfill": "7.10.4",
+    "@babel/runtime": "^7.10.5"
   },
   "devDependencies": {
     "@babel/cli": "*",
@@ -43,6 +44,5 @@
     "@babel/node": "*",
     "@babel/plugin-transform-runtime": "7.10.5",
     "@babel/preset-env": "*",
-    "@babel/runtime": "^7.10.5"
   }
 }
