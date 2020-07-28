@@ -15,8 +15,8 @@ A simple API service for gelmox group that sends order invoices in pdf format to
 - Body - The Request Body is of JSON content type and it takes the following parameters 
 ```
 {
-     "customer_name": String,
-	"billing_address": String,
+    "customer_name": String,
+    "billing_address": String,
 	"customer_email": String,
 	"phone_number": Number,
 	"products": Array of Objects
@@ -77,4 +77,4 @@ A simple API service for gelmox group that sends order invoices in pdf format to
 
 - The Total Price is calculated automaticalling and added to the pdf
 
-- The Mail takes 8 minutes Max to reach the customer email
+- The Mail takes 8 minutes Max to reach the customer's mail box
