@@ -7,18 +7,6 @@ import pdfConverter from "html-pdf";
 import sendMail from "./utils/sendEmail"
 dotenv.config();
 
-
-/*const pathToHtml = path.join(__dirname, "test.html");
-const newPdf = path.join(__dirname, `newOrder.pdf`);
-
-fs.openSync(newPdf, 'w')
-
-var options = { format: "Letter" };
-let htmlFile = fs.readFileSync(pathToHtml, "utf-8"); */
-
-
-
-
 const app = express();
 app.use(express.json());
 app.use(cors());
