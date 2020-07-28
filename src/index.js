@@ -6,6 +6,7 @@ import cors from "cors";
 import pdfConverter from "html-pdf";
 import sendMail from "./utils/sendEmail"
 dotenv.config();
+import '@babel/polyfill';
 
 const app = express();
 app.use(express.json());
