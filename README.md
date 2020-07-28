@@ -12,20 +12,23 @@ A simple API service for gelmox group that sends order invoices in pdf format to
 
 - Query --- The Query object takes a `who` property which must be equal to gelmox or gelmox1
 
-- Body - The Request Body is of JSON content type and it takes the following parameters `
- {
+- Body - The Request Body is of JSON content type and it takes the following parameters 
+```
+{
      "customer_name": String,
 	"billing_address": String,
 	"customer_email": String,
 	"phone_number": Number,
 	"products": Array of Objects
  }
-
-`
+ ```
+ ---
 
 - ###### Demo Request Body
 
-    - Pass the following demo Request Body to see the API in action `
+    - Pass the following demo Request Body to see the API in action 
+```
+{    
     "customer_name": "nonso",
 	"billing_address": "37, Onasanya, street, surulere",
 	"customer_email": "nonnypyg@gmail.com",
@@ -42,27 +45,30 @@ A simple API service for gelmox group that sends order invoices in pdf format to
 			"price": 500
 		}
 	]
-    
-    
-    `
+}
+```
+ --- 
 
 #### Response Object 
 
 - On Success
-     `{
+```
+{
     "success": true,
     "message": "Order Received"
-}`
+}
+```
+--- 
 
 - On Error
 
-`
- {
+```
+{
         message: "error sending invoice",
         "success": false
-      }
+}
 
-`
+```
 
 
 #### Important notes
