@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "test": "none",
-    "build": "babel backend --out-dir build",
+    "build": "babel src --out-dir build",
     "start": "node build/index.js",
     "dev:start": "nodemon --exec babel-node src/index.js"
   },
