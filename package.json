@@ -43,6 +43,6 @@
     "@babel/core": "*",
     "@babel/node": "*",
     "@babel/plugin-transform-runtime": "7.10.5",
-    "@babel/preset-env": "*",
+    "@babel/preset-env": "*"
   }
 }
