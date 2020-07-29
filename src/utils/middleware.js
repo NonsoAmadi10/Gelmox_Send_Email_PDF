@@ -3,6 +3,7 @@ import Validator from './valiate';
 
 const sanitizeRequest = (req, res, next) => {
     const { customer_name, billing_address, products, customer_email, phone_number } = req.body;
+    console.log(req.body);
 
 
     const response = (error) => res.status(400).send({ success: false, error });
