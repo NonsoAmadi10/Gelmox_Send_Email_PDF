@@ -7,6 +7,7 @@ import pdfConverter from "html-pdf";
 import sendMail from "./utils/sendEmail"
 dotenv.config();
 import '@babel/polyfill';
+import sanitizer from './utils/middleware';
 
 const app = express();
 app.use(express.json());
@@ -21,7 +22,7 @@ app.get("/", (req, res) => {
 app.set('x-powered-by', false);
 
 
-app.post("/api/send-pdf", async (req, res) => {
+app.post("/api/send-pdf", sanitizer, async (req, res) => {
 
   try {
     const { customer_name, billing_address, products, customer_email, phone_number } = req.body;

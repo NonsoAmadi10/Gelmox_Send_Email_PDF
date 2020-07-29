@@ -6,7 +6,7 @@ A simple API service for gelmox group that sends order invoices in pdf format to
 
 ### Prerequisites
 
-- The URL is hosted on heroku on [https://gelmox-invoice.herokuapp.com/?who=gelmox](https://gelmox-invoice.herokuapp.com/?who=gelmox)
+- The URL is hosted on heroku on [https://gelmox-invoice.herokuapp.com/api/send-pdf?who=gelmox](https://gelmox-invoice.herokuapp.com/api/send-pdf?who=gelmox)
 
 ##### Parameters
 
