@@ -18,6 +18,12 @@ class Validate {
         return re.test(email);
     }
 
+
+    static checkEmpty(input) {
+        const re = /^$/;
+        const testBody = re.test(input);
+        return testBody;
+    }
 }
 
 export default Validate;
