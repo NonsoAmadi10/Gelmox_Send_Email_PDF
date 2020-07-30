@@ -3,7 +3,7 @@ import Validator from './valiate';
 
 const sanitizeRequest = (req, res, next) => {
     const { customer_name, billing_address, products, customer_email, phone_number } = req.body;
-    console.log(req.body);
+    console.log(req.body, typeof products);
 
 
     const response = (error) => res.status(400).send({ success: false, error });
@@ -15,7 +15,7 @@ const sanitizeRequest = (req, res, next) => {
 
     if (!Validator.itsString(customer_name)) return response('customer name is supposed to be a string');
     if (!Validator.itsString(billing_address)) return response('Billing address is expected to be a string')
-    if (!Validator.itsArray(products)) return response('Products should be in an array format');
+    if (!Validator.itsArray(JSON.parse(products))) return response('Products should be in an array format');
     if (!Validator.itsaNumber(phone_number)) return response('phone number is expected to be a Number');
     if (!Validator.isEmail(customer_email)) return response('Customer email is invalid');
 
