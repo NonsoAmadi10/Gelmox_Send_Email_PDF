@@ -3,7 +3,7 @@ import Validator from './valiate';
 
 const sanitizeRequest = (req, res, next) => {
     const { customer_name, billing_address, products, customer_email, phone_number } = req.body;
-    console.log(req.body, typeof products);
+    console.log(req.body, typeof JSON.parse(products));
 
 
     const response = (error) => res.status(400).send({ success: false, error });
@@ -19,6 +19,7 @@ const sanitizeRequest = (req, res, next) => {
     if (!Validator.itsaNumber(phone_number)) return response('phone number is expected to be a Number');
     if (!Validator.isEmail(customer_email)) return response('Customer email is invalid');
 
+    req.body.products = JSON.parse(products);
     return next();
 }
 
